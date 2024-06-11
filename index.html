@@ -1,65 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adeshina COED</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start of Navbar -->
-    <!-- component -->
-    <nav class="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
-      <div
-        class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap"
-      >
-        <!-- Logo -->
-        <div class="text-indigo-500 md:order-1">
-          <img src="./edu-banner.svg" alt="School logo" class="h-10 w-100" />
-        </div>
-        <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
-          <ul class="flex font-semibold justify-between">
-            <!-- Active Link = text-indigo-500
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adeshina COED</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+  <!-- My Own Js Files -->
+  <script src="scripts/slider.js"></script>
+</head>
+
+<body>
+  <!-- Start of Navbar -->
+  <!-- component -->
+  <nav class="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
+    <div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
+      <!-- Logo -->
+      <div class="text-indigo-500 md:order-1">
+        <img src="./edu-banner.svg" alt="School logo" class="h-10 w-100" />
+      </div>
+      <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+        <ul class="flex font-semibold justify-between">
+          <!-- Active Link = text-indigo-500
                 Inactive Link = hover:text-indigo-500 -->
-            <li class="md:px-4 md:py-2 text-indigo-500">
-              <a href="#">Home</a>
-            </li>
-            <li class="md:px-4 md:py-2 hover:text-indigo-400">
-              <a href="#">About</a>
-            </li>
-            <li class="md:px-4 md:py-2 hover:text-indigo-400">
-              <a href="#">Academics</a>
-            </li>
-            <li class="md:px-4 md:py-2 hover:text-indigo-400">
-              <a href="#">Events</a>
-            </li>
-            <li class="md:px-4 md:py-2 hover:text-indigo-400">
-              <a href="#">Gallery</a>
-            </li>
-          </ul>
-        </div>
-        <div class="order-2 md:order-3">
-          <button
-            class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2"
-          >
-            <!-- Heroicons - Login Solid -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
-                clip-rule="evenodd"
-              />
-            </svg>
-            <span>Enroll now</span>
-          </button>
+          <li class="md:px-4 md:py-2 text-indigo-500">
+            <a href="#">Home</a>
+          </li>
+          <li class="md:px-4 md:py-2 hover:text-indigo-400">
+            <a href="#">About</a>
+          </li>
+          <li class="md:px-4 md:py-2 hover:text-indigo-400">
+            <a href="#">Academics</a>
+          </li>
+          <li class="md:px-4 md:py-2 hover:text-indigo-400">
+            <a href="#">Events</a>
+          </li>
+          <li class="md:px-4 md:py-2 hover:text-indigo-400">
+            <a href="#">Gallery</a>
+          </li>
+        </ul>
+      </div>
+      <div class="order-2 md:order-3">
+        <button class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
+          <!-- Heroicons - Login Solid -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+          <span>Enroll now</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navbar -->
+
+  <!-- Start of Slider -->
+  <!-- component -->
+  <div class="sliderAx h-auto">
+    <div id="slider-1" class="container mx-auto">
+      <div class="bg-cover bg-top h-auto text-white py-24 px-10 object-fill" style="background-image: url(image/1.jpg)">
+        <div class="md:w-1/2">
+          <p class="font-bold text-sm uppercase">
+            Education for young and sharp minds
+          </p>
+          <p class="text-3xl font-bold">knowledege always wins</p>
+          <p class="text-2xl mb-10 leading-none">You should join us too</p>
+          <a href="#"
+            class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Enroll
+            now</a>
         </div>
       </div>
-    </nav>
-    <!-- End of Navbar -->
-  </body>
+      <!-- container -->
+      <br />
+    </div>
+
+    <div id="slider-2" class="container mx-auto">
+      <div class="bg-cover bg-center h-auto text-white py-24 px-10 object-fill"
+        style="background-image: url(image/2.jpg)">
+        <p class="font-bold text-sm uppercase">We breed the best</p>
+        <p class="text-3xl mb-5 font-bold">
+          We offer excellent teaching to our students
+        </p>
+        <!-- <p class="text-2xl mb-10 leading-none">
+            Carousel with TailwindCSS and jQuery
+          </p> -->
+        <a href="#"
+          class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Enroll
+          now</a>
+      </div>
+      <!-- container -->
+      <br />
+    </div>
+  </div>
+  <div class="flex justify-between w-12 mx-auto pb-2">
+    <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2"></button>
+    <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+  </div>
+
+  <!-- End of Slider -->
+</body>
+
 </html>
